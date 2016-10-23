@@ -4,6 +4,7 @@ body {
 }
 
 .main {
+    margin: 0 auto;
     height: 1024px;
     width: 1024px;
     background: url("../img/pattern.png") repeat;
@@ -19,6 +20,13 @@ body {
     margin: 0 auto;
     width: 500px;
     height: 363px;
+    border-bottom: 1px solid;
+    border-color: grey;
+}
+
+.goal {
+    border-bottom: 1px solid;
+    border-color: grey;
 }
 
 .name {
@@ -39,7 +47,7 @@ img {
     height: 200px;
     width: 200px;
     border: 1px solid grey;
-    border-radius: 1px; /*  ???  */
+    border-radius: 1px;
 }
 
 .description {
@@ -61,6 +69,12 @@ img {
     font-size: 14px;
     line-height: 14px;
     color: grey;
+}
+
+.social-network {
+    border-bottom: 1px solid;
+    border-color: grey;
+    padding-bottom: 20px;
 }
 
 .social {
