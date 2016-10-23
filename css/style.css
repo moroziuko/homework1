@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 1024px;
+    width: 1024px;
+    background: url("../img/pattern.png") repeat;
+}
+
+.box {
+    margin: 0 auto;
+    width: 500px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    width: 500px;
+    height: 363px;
+}
+
+.name {
+    padding: 45px 0 25px 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.photo {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 1px; /*  ???  */
+}
+
+.description {
+    padding: 24px 0 20px 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #5D5D5D;
+    text-decoration: none;
+}
+
+.list-item {
+    color: grey;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.details {
+    padding: 0 0 0 36px;
+    font-size: 14px;
+    line-height: 14px;
+    color: grey;
+}
+
+.social {
+    font-style: italic;
+}
