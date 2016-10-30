@@ -1,2 +1,2 @@
-# homework1
-GoFrontend #7 - homework1
+# Homework
+GoFrontend #7 - Homework
