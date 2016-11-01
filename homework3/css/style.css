@@ -63,14 +63,14 @@ body {
     list-style: none;
 }
 
-.left_menu_links li {
+.menu_list_item {
     border-bottom: 1px solid #c8c8c8;
 }
 
 .menu_link {
     display: block;
     position: relative;
-    padding: 11.4px 25px;
+    padding: 12px 25px;
     font-size: 13px;
     font-family: Myriad Pro, sans-serif;
     text-align: left;
