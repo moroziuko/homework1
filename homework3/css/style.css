@@ -13,12 +13,16 @@ body {
 
 /* HEADER */
 
+.header {
+    height: 210px;
+}
+
 .logo {
     padding: 50px 0 0 45px;
 }
 
 .menu_panel_top {
-    margin: 40px 0 40px 46px;
+    margin: 40px 0 0 46px;
     width: 966px;
     height: 40px;
     background: #fff linear-gradient(to top, #444343, #5e5e5e);
@@ -26,24 +30,25 @@ body {
 
 .panel_links li {
     float: left;
-    margin-right: 65px;
-    padding: 0 25px;
     list-style: none;
 }
 
-.header_links li:hover {
-    background-image: linear-gradient(to top, #2e2e2e, #4a4a4a);
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-}
-
 .header_list_item a {
+    padding: 11px 45px;
     line-height: 40px;
     font-size: 15px;
     font-family: OpenSans, sans-serif;
     color: #fff;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.header_list_item a:hover {
+    background-image: linear-gradient(to top, #2e2e2e, #4a4a4a);
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
 }
 
 /* CONTENT */
@@ -51,7 +56,7 @@ body {
 .container {
     width: 966px;
     height: 580px;
-    margin: 40px 0 40px 46px;
+    margin: 0 0 40px 46px;
 }
 
 .left_menu {
@@ -61,6 +66,7 @@ body {
     background-color: white;
     border: 1px solid #c8c8c8;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 .left_menu_links {
@@ -68,12 +74,13 @@ body {
 }
 
 .menu_list_item {
+    height: 40px;
     border-bottom: 1px solid #c8c8c8;
+    box-sizing: border-box;
 }
 
 .menu_link_item {
     display: block;
-    position: relative;
     padding: 12px 25px;
     font-size: 13px;
     font-family: OpenSans, sans-serif;
@@ -119,11 +126,8 @@ body {
     background: #e1e1e1;
 }
 
-.footer_links li:hover {
-    text-decoration: underline;
-}
-
 .footer_panel_item {
+    padding: 12px 45px;
     line-height: 40px;
     font-size: 13px;
     font-family: OpenSans, sans-serif;
@@ -131,7 +135,12 @@ body {
     text-decoration: none;
 }
 
+.footer_panel_item a:hover {
+    text-decoration: underline;
+}
+
 .copyright {
     display: block;
-    padding-left: 780px;
+    margin: 0;
+    padding: 0 26px 0 235px;
 }
