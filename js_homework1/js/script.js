@@ -16,9 +16,9 @@ function customPow() {
         var result = number;
         for (var index = 0; index < exponent - 1; index++) {
             result = result * number;
-            console.log("Result:" + result);
         }
     }
+    console.log("Result:" + result);
 }
 
 console.log(customPow());
