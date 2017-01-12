@@ -70,12 +70,12 @@ function generateQuestions(parentForm, questionList) {
         let fieldset = generateElement(parentForm, "fieldset");
         generateElementWithText(fieldset, "p", questionList[index].title);
         let div = generateElement(fieldset, "div");
-        generateQuestionOptions(fieldset, questionList[index].optionList);
+        generateQuestionOptions(div, questionList[index].optionList);
     }
 }
 
 function generateFormContent(parentForm, questionList) {
-    generateElementWithText(parentForm, "h4", "Тест по программированию");
+    generateElementWithText(parentForm, "p", "Тест по программированию");
     generateQuestions(parentForm, questionList)
     generateSubmitButton(parentForm);
 }
@@ -90,10 +90,15 @@ function addClassNameToElements(selector, className) {
 generateFormContent(form, questionList);
 
 addClassNameToElements("body>div", "container");
+
 addClassNameToElements("body>div", "col-6");
-addClassNameToElements("h4", "text-center");
+addClassNameToElements("fieldset>div", "col-6");
+
+addClassNameToElements("form>p", "text-center");
 addClassNameToElements("form>div", "text-center");
+
+addClassNameToElements("p", "lead");
+
 addClassNameToElements("button", "btn");
 addClassNameToElements("button", "btn-primary");
-
 
